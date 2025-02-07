@@ -11,7 +11,14 @@ function App() {
         />
       </head>
       <Navbar />
-      <div className="App-body"></div>
+      <div className="App-body">
+        <div className="App-info">
+          <span className="App-info-1">Kilpailun nimi</span>
+          <span className="App-info-1">rasti #</span>
+          <span className="App-info-1">kilpailun aika</span>
+          <button className="App-info-2">Filter</button>
+        </div>
+      </div>
     </div>
   );
 }

@@ -1,5 +1,6 @@
 import Navbar from "./components/Navbar";
 import "./styles/App.css";
+import Footer from "./components/footr";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       </head>
       <Navbar />
       <div className="App-body"></div>
+      <Footer />
     </div>
   );
 }

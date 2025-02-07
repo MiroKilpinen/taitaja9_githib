@@ -13,7 +13,6 @@ function Users() {
       </head>
       <Navbar />
       <div className="Users-body">
-        <p>yo</p>
       </div>
     </div>
   );

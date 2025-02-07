@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/Users.css";
+import "../styles/users.css";
 import Navbar from "../components/Navbar";
 
 function Users() {

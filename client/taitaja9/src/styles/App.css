@@ -9,6 +9,7 @@
   display: flex;
   flex-direction: column;
   color: black;
+  display: flex;
 }
 
 .App-info-1 {
@@ -30,3 +31,32 @@
   margin: 25px;
   margin-top: 50px;
 }
+
+.team-flex {
+  display: flex;
+  flex-direction: row;
+}
+
+.team-container {
+  background-color: #87BBA2;
+  color: black;
+  display: flex;
+  flex-direction: row;
+}
+
+.team-con-part {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: #87BBA2;
+  color: black;
+  width: 15px;
+  padding-left: 50px;
+}
+
+.team-num {}
+
+.team-nimet {}
+
+.team-rasti-aika {}
+
+.team-koko-aika {}

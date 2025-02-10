@@ -1,0 +1,17 @@
+.CONTAINER {
+    background-color: #FFF07C;
+    color: #000000;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-div {
+    display: flex;
+    flex-direction: row;
+}
+
+input {
+    border: solid #000000;
+    background-color: #F0F7EE;
+}

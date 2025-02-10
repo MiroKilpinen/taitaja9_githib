@@ -1,10 +1,9 @@
 .App {
   font-family: Jaro;
-  text-align: center;
+  background-color: #5d737e;
 }
 
 .App-body {
-  background-color: #5d737e;
   min-height: 90vh;
   display: flex;
   flex-direction: column;

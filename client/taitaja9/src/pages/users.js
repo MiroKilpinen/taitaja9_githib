@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/users.css";
 import Navbar from "../components/Navbar";
+import Footer from "../components/footr";
 
 function Users() {
   return (
@@ -12,9 +13,8 @@ function Users() {
         />
       </head>
       <Navbar />
-      <div className="Users-body">
-        <p>yo</p>
-      </div>
+      <div className="Users-body"></div>
+      <Footer />
     </div>
   );
 }

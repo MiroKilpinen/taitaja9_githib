@@ -12,8 +12,8 @@
 h2 {
   color: #f0f7ee;
   font-size: 32px;
+  margin: 25px;
   margin-top: 15px;
-  margin-left: 25px;
   max-width: 200px;
 }
 
@@ -26,6 +26,7 @@ h2 {
   border-radius: 6px;
   height: 50px;
   width: 130px;
+  margin-right: 15px;
 }
 
 .users-body {
@@ -33,21 +34,8 @@ h2 {
   color: black;
 }
 
-.user-container {
-  background-color: #87bba2;
+.users-list {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-between;
-  max-width: 300px;
-  border-radius: 6px;
-  padding: 5px;
-}
-
-.edit-user {
-  font-size: 20px;
-  background-color: #fff07c;
-  border: none;
-  border-radius: 6px;
-  height: 50px;
-  width: 130px;
 }

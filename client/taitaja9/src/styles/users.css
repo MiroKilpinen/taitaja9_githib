@@ -1,11 +1,5 @@
-* {
-  font-family: Jaro;
-}
-
 .users {
   background-color: #5d737e;
-  display: flex;
-  flex-direction: column;
 }
 
 .users-header {

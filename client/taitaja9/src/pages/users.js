@@ -6,12 +6,6 @@ import Footer from "../components/footr";
 function Users() {
   return (
     <div className="users">
-      <head>
-        <link
-          href="https://fonts.googleapis.com/css?family=Jaro"
-          rel="stylesheet"
-        />
-      </head>
       <Navbar />
       <div className="user-header">
         <h2>Käyttäjät</h2>

@@ -1,0 +1,53 @@
+.dynamic-popup {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f0f7ee;
+  border-radius: 6px;
+  min-width: 300px;
+  height: 170px;
+}
+
+.edit-button {
+  font-size: 18px;
+  background-color: #fff07c;
+  border: none;
+  border-radius: 6px;
+  height: 50px;
+  width: 130px;
+}
+
+.edit-user-input-container {
+  flex-direction: column;
+  min-height: 170px;
+  max-width: 140px;
+}
+
+.edit-user-input {
+  font-size: 16px;
+  border-color: #5d737e;
+  border-radius: 6px;
+  height: 25px;
+  width: 110px;
+  margin: 5px;
+}
+
+.edit-user-button-container {
+  flex-direction: column;
+  min-height: 170px;
+  max-width: 140px;
+}
+
+.edit-user-button {
+  font-size: 18px;
+  background-color: #fff07c;
+  border-color: #5d737e;
+  border-radius: 6px;
+  height: 30px;
+  width: 130px;
+  margin: 5px;
+}

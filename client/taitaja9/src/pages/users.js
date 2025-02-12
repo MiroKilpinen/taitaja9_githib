@@ -14,21 +14,9 @@ function Users() {
       </div>
       <div className="users-body">
         <div className="users-list">
-          <UserContainer name="Nimi" role="Rooli" />
-          <UserContainer name="Nimi" role="Rooli" />
-          <UserContainer name="Nimi" role="Rooli" />
-          <UserContainer name="Nimi" role="Rooli" />
-          <UserContainer name="Nimi" role="Rooli" />
-          <UserContainer name="Nimi" role="Rooli" />
-          <UserContainer name="Nimi" role="Rooli" />
-          <UserContainer name="Nimi" role="Rooli" />
-          <UserContainer name="Nimi" role="Rooli" />
-          <UserContainer name="Nimi" role="Rooli" />
-          <UserContainer name="Nimi" role="Rooli" />
-          <UserContainer name="Nimi" role="Rooli" />
-          <UserContainer name="Nimi" role="Rooli" />
-          <UserContainer name="Nimi" role="Rooli" />
-          <UserContainer name="Nimi" role="Rooli" />
+          <UserContainer name="Nimi" role="Rooli" id="1" />
+          <UserContainer name="Nimi" role="Rooli" id="2" />
+          <UserContainer name="Nimi" role="Rooli" id="3" />
         </div>
       </div>
       <Footer />

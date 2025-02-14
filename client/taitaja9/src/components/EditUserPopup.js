@@ -1,16 +1,17 @@
 import React, { useState } from "react";
-import Popup from "reactjs-popup";
 import "../styles/EditUserPopup.css";
 
 const EditUserPopup = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const openPopup = () => setIsOpen(true);
+  const togglePopup = () => {
+    setIsOpen(!isOpen);
+  };
   const closePopup = () => setIsOpen(false);
 
   return (
     <div>
-      <button className="edit-button" onClick={openPopup}>
+      <button className="edit-button" onClick={togglePopup}>
         Muokkaa
       </button>
       {isOpen && (

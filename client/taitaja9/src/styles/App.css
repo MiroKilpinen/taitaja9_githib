@@ -35,6 +35,8 @@
 .teams-flex {
   display: flex;
   flex-direction: row;
+  max-height: 1000px;
+  flex-wrap: wrap;
 }
 
 .team-container {
@@ -43,18 +45,10 @@
   display: flex;
   flex-direction: row;
   margin-left: 50px;
+  margin-top: 50px;
   width: 25%;
   border-radius: 5px;
-}
-
-.team-con-part {
-  display: flex;
-  flex-wrap: nowrap;
-  background-color: #87BBA2;
-  color: black;
-  width: 15px;
-  padding-left: 50px;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
 }
 

@@ -1,6 +1,7 @@
 import Navbar from "./components/Navbar";
 import "./styles/App.css";
 import Footer from "./components/footr";
+import TeamContainer from "./components/TeamContainer";
 
 function App() {
   return (
@@ -14,21 +15,7 @@ function App() {
           <button className="App-info-2">Filter</button>
         </div>
         <div className="teams-flex">
-          <div className="team-container">
-            <div className="team-num">
-              <h1>num #</h1>
-            </div>
-            <div className="team-nimet">
-              <h2>Tiimi nimi</h2>
-              <h4>Koulun nimi</h4>
-            </div>
-            <div className="team-rasti-aika">
-              <h4>rasti aika</h4>
-            </div>
-            <div className="team-koko-aika">
-              <h3>kokonaisaika</h3>
-            </div>
-          </div>
+          <TeamContainer num="numero" Tnimi="Tiimi nimi" Knimi="Koulu nimi" rastiAika="rastin aika" kokoAika="kokonaisaika" />
         </div>
       </div>
     </div>

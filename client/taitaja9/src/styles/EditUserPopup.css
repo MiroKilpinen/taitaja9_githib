@@ -2,14 +2,14 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  position: absolute;
+  /* top: 50%; */
+  /* left: 50%; */
+  /* transform: translate(-50%, -50%); */
   background-color: #f0f7ee;
   border-radius: 6px;
   min-width: 300px;
-  height: 170px;
+  height: 120px;
 }
 
 .edit-button {
@@ -23,7 +23,7 @@
 
 .edit-user-input-container {
   flex-direction: column;
-  min-height: 170px;
+  height: 100%;
   max-width: 140px;
 }
 
@@ -31,14 +31,14 @@
   font-size: 16px;
   border-color: #5d737e;
   border-radius: 6px;
-  height: 25px;
-  width: 110px;
+  height: 24px;
+  width: 122px;
   margin: 5px;
 }
 
 .edit-user-button-container {
   flex-direction: column;
-  min-height: 170px;
+  height: 100%;
   max-width: 140px;
 }
 

@@ -1,33 +1,36 @@
 import "../styles/login.css";
 import React, { useState } from 'react';
 
-const loginPopup = () => {
+
+
+const LoginPopup = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     const openLogin = () => setIsOpen(true);
     const closeLogin = () => setIsOpen(false);
 
-
-
     return (
         <div>
-        <button onClick={openLogin}>Login</button>
+
+        <button onClick={openLogin} class="openLogin">Kirjaudu sisään</button>
         
         {isOpen && (
             <div class="CONTAINER">
-                <button onClick={closeLogin}><i class="fi fi-br-cross"></i></button>
-                <h2>Kirjaudu sisään</h2>
+                <div class="flex-div">
+                    <h2>Kirjaudu sisään</h2>
+                    <button onClick={closeLogin} class="closeLogin">&#10006;</button>
+                </div>
                 <div class="flex-div">  
-                    <p>Nimi: </p> 
+                    <p class="contents">Nimi: </p> 
                     <input type="text"></input>
                 </div>
                 <div class="flex-div">
-                    <p>Salasana: </p> 
+                    <p class="contents">Salasana: </p> 
                     <input type="text"></input>
                 </div>
                 <div class="flex-div">
-                    <input type="submit">Jatka kirjautumatta</input>
-                    <input type="submit"> kirjaudu sisään</input>
+                    <button class="loginBtns">Jatka kirjautumatta</button>
+                    <button class="loginBtns"> kirjaudu sisään</button>
                 </div>
             </div>
         )}
@@ -36,4 +39,4 @@ const loginPopup = () => {
 };
 
 
-export default loginPopup;
+export default LoginPopup;

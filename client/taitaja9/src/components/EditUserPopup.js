@@ -1,21 +1,15 @@
-import React, { useState } from "react";
+import React from "react";
+import Popup from "reactjs-popup";
 import "../styles/EditUserPopup.css";
 
 const EditUserPopup = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const togglePopup = () => {
-    setIsOpen(!isOpen);
-  };
-  const closePopup = () => setIsOpen(false);
-
   return (
-    <div>
-      <button className="edit-button" onClick={togglePopup}>
-        Muokkaa
-      </button>
-      {isOpen && (
-        <div className="dynamic-popup">
+    <Popup
+      trigger={<button className="edit-button">Muokkaa</button>}
+      position={"bottom right"}
+    >
+      {(close) => (
+        <div className="modal">
           <div className="edit-user-input-container">
             <input
               type="text"
@@ -23,6 +17,7 @@ const EditUserPopup = () => {
               placeholder="Nimi"
               id="name"
               name="name"
+              autoComplete="new-password"
             ></input>
             <input
               type="password"
@@ -30,6 +25,7 @@ const EditUserPopup = () => {
               placeholder="Salasana"
               id="password"
               name="password"
+              autoComplete="new-password"
             ></input>
             <input
               type="text"
@@ -40,15 +36,19 @@ const EditUserPopup = () => {
             ></input>
           </div>
           <div className="edit-user-button-container">
-            <button className="edit-user-button" onClick={closePopup}>
+            <button className="edit-user-button" onClick={close}>
               Takaisin
             </button>
-            <button className="edit-user-button">Poista käyttäjä</button>
-            <button className="edit-user-button">Tallenna</button>
+            <button className="edit-user-button" onClick={close}>
+              Poista käyttäjä
+            </button>
+            <button className="edit-user-button" onClick={close}>
+              Tallenna
+            </button>
           </div>
         </div>
       )}
-    </div>
+    </Popup>
   );
 };
 

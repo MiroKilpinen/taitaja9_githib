@@ -1,5 +1,13 @@
 import "../styles/TeamContainer.css";
 
+function open() {
+  alert("I am an alert box!");
+};
+
+function close() {
+  alert("I am not an alert box!");
+};
+
 function TeamContainer(props) {
     return (
         <div className="team-container">
@@ -15,6 +23,9 @@ function TeamContainer(props) {
           </div>
           <div className="team-koko-aika">
             <h3>{props.kokoAika}</h3>
+          </div>
+          <div className="team-kaikki-rastit">
+            <i class="down" onClick={open}>&#9660;</i>
           </div>
         </div>
         );

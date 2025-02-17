@@ -33,3 +33,23 @@
   .team-koko-aika > h3 {
     font-weight: lighter;
   }
+
+  .team-kaikki-rastit {
+    padding-top: 75px;
+  }
+
+  .down {
+    background-color: none;
+    font-size: x-large;
+    padding-right: 5px;
+  }
+
+  .collapsible .content {
+    padding: 6px;
+    background-color: #eeeeee;
+}
+.collapsible .header {
+    background-color: #dddddd;
+    padding: 6px;
+    cursor: pointer;
+}

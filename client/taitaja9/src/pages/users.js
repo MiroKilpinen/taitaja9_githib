@@ -3,6 +3,7 @@ import "../styles/users.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/footr";
 import UserContainer from "../components/UserContainer";
+import AddUserPopup from "../components/AddUserPopup";
 
 function Users() {
   return (
@@ -10,15 +11,13 @@ function Users() {
       <Navbar />
       <div className="users-header">
         <h2>Käyttäjät</h2>
-        <button className="add-user">Lisää käyttäjä</button>
+        <AddUserPopup />
       </div>
       <div className="users-body">
         <div className="users-list">
-          <UserContainer name="Nimi" role="Rooli" id="1" />
-          <UserContainer name="Nimi" role="Rooli" id="2" />
-          <UserContainer name="Nimi" role="Rooli" id="3" />
-          <UserContainer name="Nimi" role="Rooli" id="4" />
-          <UserContainer name="Nimi" role="Rooli" id="5" />
+          <UserContainer name="Miro" role="Admin" id="1" password="123" />
+          <UserContainer name="Käyttäjä 1" role="User" id="2" password="456" />
+          <UserContainer name="Admin 2" role="Admin" id="3" password="789" />
         </div>
       </div>
       <Footer />

@@ -31,6 +31,11 @@ input {
     color: #000000;
     font-family: Jaro;
     border: transparent;
+    font-size: 15px;
+    text-decoration: underline;
+}
+.openLogin:hover {
+    cursor:pointer;
 }
 
 .closeLogin {
@@ -40,8 +45,13 @@ input {
     background-color: transparent;
     border: transparent;
     font-size: xx-large;
-    margin: 10px;
-    
+    margin: 10px;   
+}
+.closeLogin:active {
+    transform: translateY(2px);
+}
+.closeLogin:hover {
+    cursor:pointer;
 }
 
 h2 {
@@ -60,11 +70,18 @@ h2 {
     margin: 4%;
     width: 150px;
 }
+.loginBtns:active {
+    transform: translateY(2px);
+}
+.loginBtns:hover {
+    cursor:pointer;
+}
 
 .contents {
     align-self: center;
     position: relative;
     left: 30px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     margin-top: 10px;
 }
+

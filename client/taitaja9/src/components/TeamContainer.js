@@ -1,31 +1,42 @@
 import "../styles/TeamContainer.css";
+import React from "react";
 
 function open() {
-  alert("I am an alert box!");
+  document.getElementById("kaikkiRastit").style.display="inline";
+  document.getElementById("näytäRastit").style.display="none";
 };
 
 function close() {
-  alert("I am not an alert box!");
+  document.getElementById("kaikkiRastit").style.display="none";
+  document.getElementById("näytäRastit").style.display="inline";
 };
 
 function TeamContainer(props) {
     return (
         <div className="team-container">
-          <div className="team-num">
+          <div className="team-num" id="teamNum">
             <h1>{props.num} #</h1>
           </div>
           <div className="team-nimet">
             <h2>{props.Tnimi}</h2>
             <h4>{props.Knimi}</h4>
           </div>
-          <div className="team-rasti-aika">
+          <div className="team-rasti-aika" id="rastiAika">
             <h4>{props.rastiAika}</h4>
           </div>
           <div className="team-koko-aika">
             <h3>{props.kokoAika}</h3>
           </div>
-          <div className="team-kaikki-rastit">
-            <i class="down" onClick={open}>&#9660;</i>
+          <div className="näytä-kaikki-rastit" id="näytäRastit">
+            <button onClick={open}>&#9660;</button>
+          </div>
+          <div className="team-kaikki-rastit" id="kaikkiRastit">
+            <ol>
+              <li>rasti aika</li>
+              <li>rasti aika</li>
+              <li>rasti aika</li>
+            </ol>
+            <button onClick={close}>&#9650;</button>
           </div>
         </div>
         );

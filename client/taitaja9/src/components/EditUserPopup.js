@@ -1,33 +1,62 @@
-import React from "react";
+import React, { useState } from "react";
 import Popup from "reactjs-popup";
 import "../styles/EditUserPopup.css";
 
-const EditUserPopup = () => {
+const EditUserPopup = ({ name, role, id, password }) => {
+  const [username, setUsername] = useState(name);
+  const [userPassword, setUserPassword] = useState(password);
+  const [userRole, setUserRole] = useState(role);
+
+  function handleNameChange(e) {
+    setUsername(e.target.value);
+  }
+  function handlePasswordChange(e) {
+    setUserPassword(e.target.value);
+  }
+  function handleRoleChange(e) {
+    setUserRole(e.target.value);
+  }
+
+  function closePopup() {
+    setUsername(name);
+    setUserPassword(password);
+    setUserRole(role);
+  }
+
   return (
     <Popup
       trigger={<button className="edit-button">Muokkaa</button>}
       position={"bottom right"}
+      onClose={closePopup}
     >
       {(close) => (
         <div className="modal">
           <div className="edit-user-input-container">
             <input
+              onChange={handleNameChange}
               type="text"
               className="edit-user-input"
-              placeholder="Nimi"
               id="name"
               name="name"
+              value={username}
               autoComplete="new-password"
             ></input>
             <input
+              onChange={handlePasswordChange}
               type="password"
               className="edit-user-input"
-              placeholder="Salasana"
               id="password"
               name="password"
+              value={userPassword}
               autoComplete="new-password"
             ></input>
-            <select className="edit-user-select" name="role" id="role">
+            <select
+              onChange={handleRoleChange}
+              className="edit-user-select"
+              name="role"
+              id="role"
+              value={userRole}
+            >
               <option value="Admin">Admin</option>
               <option value="User">User</option>
             </select>

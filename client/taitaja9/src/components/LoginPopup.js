@@ -1,6 +1,5 @@
-import "../styles/login.css";
+import "../styles/Login.css";
 import React, { useState } from 'react';
-
 
 
 const LoginPopup = () => {
@@ -8,6 +7,14 @@ const LoginPopup = () => {
 
     const openLogin = () => setIsOpen(true);
     const closeLogin = () => setIsOpen(false);
+    const noLogin = () => setIsOpen(false);
+    function Login(name, password) {
+        if (name.lenght === 0 || password.lenght === 0) {
+            document.getElementById().innerHTML = "Nimi tai salasana väärin.";
+        } else {
+            console.log("kirjauduttu or smth");
+        }
+    }
 
     return (
         <div>
@@ -22,15 +29,15 @@ const LoginPopup = () => {
                 </div>
                 <div class="flex-div">  
                     <p class="contents">Nimi: </p> 
-                    <input type="text"></input>
+                    <input type="text" id="name" required/>
                 </div>
                 <div class="flex-div">
                     <p class="contents">Salasana: </p> 
-                    <input type="text"></input>
+                    <input type="text" id="password" required/>
                 </div>
                 <div class="flex-div">
-                    <button class="loginBtns">Jatka kirjautumatta</button>
-                    <button class="loginBtns"> kirjaudu sisään</button>
+                    <button class="loginBtns" onClick={noLogin}>Jatka kirjautumatta</button>
+                    <button class="loginBtns" onClick={Login}> kirjaudu sisään</button>
                 </div>
             </div>
         )}

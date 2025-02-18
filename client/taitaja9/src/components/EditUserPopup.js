@@ -27,13 +27,10 @@ const EditUserPopup = () => {
               name="password"
               autoComplete="new-password"
             ></input>
-            <input
-              type="text"
-              className="edit-user-input"
-              placeholder="Rooli"
-              id="role"
-              name="role"
-            ></input>
+            <select className="edit-user-select" name="role" id="role">
+              <option value="Admin">Admin</option>
+              <option value="User">User</option>
+            </select>
           </div>
           <div className="edit-user-button-container">
             <button className="edit-user-button" onClick={close}>

@@ -12,10 +12,14 @@
 .edit-button {
   font-size: 18px;
   background-color: #fff07c;
-  border: none;
+  border-color: black;
   border-radius: 6px;
   height: 50px;
   width: 130px;
+}
+
+.edit-button:active {
+  transform: translateY(2px);
 }
 
 .edit-user-input-container {
@@ -26,10 +30,19 @@
 
 .edit-user-input {
   font-size: 16px;
-  border-color: #5d737e;
+  border-color: black;
   border-radius: 6px;
   height: 24px;
   width: 122px;
+  margin: 5px;
+}
+
+.edit-user-select {
+  font-size: 16px;
+  border-color: black;
+  border-radius: 6px;
+  height: 30px;
+  width: 130px;
   margin: 5px;
 }
 
@@ -42,9 +55,13 @@
 .edit-user-button {
   font-size: 18px;
   background-color: #fff07c;
-  border-color: #5d737e;
+  border-color: black;
   border-radius: 6px;
   height: 30px;
   width: 130px;
   margin: 5px;
+}
+
+.edit-user-button:active {
+  transform: translateY(2px);
 }

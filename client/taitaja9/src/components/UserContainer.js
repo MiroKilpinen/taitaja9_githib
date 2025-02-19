@@ -1,7 +1,12 @@
 import "../styles/UserContainer.css";
 import EditUserPopup from "./EditUserPopup";
 
-function UserContainer({ name, role, id, password }) {
+/*
+  Laitetaan saadut propsit oikeisiin paikkoihin ja
+  annetaan ne käyttäjän muokkaus popupille.
+*/
+
+function UserContainer({ id, name, role, password }) {
   const parentDataName = name;
   const parentDataRole = role;
   const parentDataId = id;

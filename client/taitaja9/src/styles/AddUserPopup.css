@@ -1,0 +1,76 @@
+.modal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #f0f7ee;
+  border-radius: 6px;
+  min-width: 300px;
+  height: 120px;
+  margin: 5px;
+}
+
+.add-button {
+  font-size: 18px;
+  background-color: #fff07c;
+  border-color: black;
+  border-radius: 6px;
+  height: 50px;
+  width: 130px;
+  justify-self: right;
+  align-self: flex-end;
+}
+
+.add-button:hover {
+  cursor: pointer;
+}
+
+.add-button:active {
+  transform: translateY(2px);
+}
+
+.add-user-input-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  max-width: 140px;
+}
+
+.add-user-input {
+  font-size: 16px;
+  border-color: black;
+  border-radius: 6px;
+  height: 24px;
+  width: 122px;
+  margin: 5px;
+}
+
+.add-user-select {
+  font-size: 16px;
+  border-color: black;
+  border-radius: 6px;
+  height: 30px;
+  width: 130px;
+  margin: 5px;
+}
+
+.add-user-button-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  max-width: 140px;
+}
+
+.add-user-button {
+  font-size: 18px;
+  background-color: #fff07c;
+  border-color: black;
+  border-radius: 6px;
+  height: 30px;
+  width: 130px;
+  margin: 5px;
+}
+
+.add-user-button:active {
+  transform: translateY(2px);
+}

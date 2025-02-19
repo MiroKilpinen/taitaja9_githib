@@ -21,6 +21,7 @@ function App() {
           <TeamContainer id="6" num="6" Tnimi="Tiimi nimi" Knimi="Koulu nimi" rastiAika="rastin aika" kokoAika="kokonaisaika" />
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

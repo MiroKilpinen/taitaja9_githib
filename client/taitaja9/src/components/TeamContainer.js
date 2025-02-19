@@ -1,14 +1,12 @@
 import "../styles/TeamContainer.css";
 import React from "react";
 
-function myFunction(a, b) {
+function rastitButton(a) {
   var x = document.getElementById("kaikkiRastit");
   var y = document.getElementById("näytäRastit");
   console.log(a)
-  b = document.getElementById("teamNum");
-  console.log(b)
   if (x.style.display === "none") {
-    x.style.display = "block";
+    x.style.display = "block"; // avaa vain tiimi 1 rastit
     y.innerHTML = "&#9650;";
   } else {
     x.style.display = "none";
@@ -33,7 +31,7 @@ function TeamContainer(props) {
             <h3>{props.kokoAika}</h3>
           </div>
           <div className="näytä-kaikki-rastit">
-            <button onClick={myFunction.bind(this, TeamContainer.id)} id="näytäRastit">&#9660;</button>
+            <button onClick={rastitButton.bind(this, props.id)} id="näytäRastit">&#9660;</button>
           </div>
           <div className="team-kaikki-rastit" id="kaikkiRastit">
             <ol>

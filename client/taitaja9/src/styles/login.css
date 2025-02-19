@@ -16,12 +16,16 @@
     margin: 10px;
 }
 
-h2 {
+/*"Kirjaudu sisään" teksti loginin sisällä*/
+.kirjauduSisText {
     align-self: center;
     margin-top: 4px; margin-bottom: 4px;
     margin-left: 40px;
+    color: #000000;
+    font-size: x-large;
 }
 
+/*Inputit, duh*/
 input {
     align-self: center;
     border: solid #000000 2px;
@@ -32,6 +36,7 @@ input {
     right: 40px;
 }
 
+/*Loginin avaus nappi navbarissa*/
 .openLogin {
     background-color: transparent;
     color: #000000;
@@ -42,6 +47,7 @@ input {
 }
 .openLogin:hover {cursor:pointer;}
 
+/*Loginin sulku x*/
 .closeLogin {
     position: absolute;
     right: 20px;
@@ -54,6 +60,7 @@ input {
 .closeLogin:active {transform: translateY(2px);}
 .closeLogin:hover {cursor:pointer;}
 
+/*kivat napit loginissa ("jatka kirjautumatta" ja "kirjaudu sisään")*/
 .loginBtns {
     background-color: #000000;
     color: #F0F7EE;
@@ -67,6 +74,7 @@ input {
 .loginBtns:active {transform: translateY(2px);}
 .loginBtns:hover {cursor:pointer;}
 
+/*other texts and stuff*/
 .contents {
     align-self: center;
     position: relative;

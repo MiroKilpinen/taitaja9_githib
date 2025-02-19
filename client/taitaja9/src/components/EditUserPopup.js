@@ -2,6 +2,12 @@ import React, { useState } from "react";
 import Popup from "reactjs-popup";
 import "../styles/EditUserPopup.css";
 
+/*
+  Käyttäjän tietojen muokkaus popup.
+  Pitää lisätä database yhteydet, 
+  jotta voi oikeasti muuttaa käyttäjien tietoja
+*/
+
 const EditUserPopup = ({ name, role, id, password }) => {
   const [username, setUsername] = useState(name);
   const [userPassword, setUserPassword] = useState(password);
@@ -17,20 +23,28 @@ const EditUserPopup = ({ name, role, id, password }) => {
     setUserRole(e.target.value);
   }
 
-  function closePopup() {
+  /*  
+    Päivittää statet kun popupin sulkee, 
+    jotta siellä on oikeat tiedot
+  */
+  function updateUserDataOnClose() {
     setUsername(name);
     setUserPassword(password);
     setUserRole(role);
   }
 
+  function updateUser() {}
+
+  function deleteUser() {}
+
   return (
     <Popup
       trigger={<button className="edit-button">Muokkaa</button>}
       position={"bottom right"}
-      onClose={closePopup}
+      onClose={updateUserDataOnClose}
     >
       {(close) => (
-        <div className="modal">
+        <div className="popup">
           <div className="edit-user-input-container">
             <input
               onChange={handleNameChange}

@@ -16,6 +16,12 @@
     margin: 10px;
 }
 
+h2 {
+    align-self: center;
+    margin-top: 4px; margin-bottom: 4px;
+    margin-left: 40px;
+}
+
 input {
     align-self: center;
     border: solid #000000 2px;
@@ -34,9 +40,7 @@ input {
     font-size: 15px;
     text-decoration: underline;
 }
-.openLogin:hover {
-    cursor:pointer;
-}
+.openLogin:hover {cursor:pointer;}
 
 .closeLogin {
     position: absolute;
@@ -47,18 +51,8 @@ input {
     font-size: xx-large;
     margin: 10px;   
 }
-.closeLogin:active {
-    transform: translateY(2px);
-}
-.closeLogin:hover {
-    cursor:pointer;
-}
-
-h2 {
-    align-self: center;
-    margin-top: 4px; margin-bottom: 4px;
-    margin-left: 40px;
-}
+.closeLogin:active {transform: translateY(2px);}
+.closeLogin:hover {cursor:pointer;}
 
 .loginBtns {
     background-color: #000000;
@@ -70,12 +64,8 @@ h2 {
     margin: 4%;
     width: 150px;
 }
-.loginBtns:active {
-    transform: translateY(2px);
-}
-.loginBtns:hover {
-    cursor:pointer;
-}
+.loginBtns:active {transform: translateY(2px);}
+.loginBtns:hover {cursor:pointer;}
 
 .contents {
     align-self: center;

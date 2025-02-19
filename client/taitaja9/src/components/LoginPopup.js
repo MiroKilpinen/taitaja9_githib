@@ -7,10 +7,14 @@ const LoginPopup = () => {
 
     const openLogin = () => setIsOpen(true);
     const closeLogin = () => setIsOpen(false);
-    const noLogin = () => setIsOpen(false);
-    function Login(name, password) {
-        if (name.lenght === 0 || password.lenght === 0) {
-            document.getElementById().innerHTML = "Nimi tai salasana väärin.";
+    const continueWOLogin = () => setIsOpen(false);
+    
+    function Login(inputName, inputPassword) {
+        console.log(inputName);
+        if (inputName.lenght < 0 && inputPassword.lenght < 0) {
+            console.log("ei voi olla tyhjä dumbass");
+        } else if (inputName === undefined && inputPassword === undefined) {
+            console.log("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaargh");
         } else {
             console.log("kirjauduttu or smth");
         }
@@ -18,7 +22,6 @@ const LoginPopup = () => {
 
     return (
         <div>
-
         <button onClick={openLogin} class="openLogin">Kirjaudu sisään</button>
         
         {isOpen && (
@@ -29,14 +32,14 @@ const LoginPopup = () => {
                 </div>
                 <div class="flex-div">  
                     <p class="contents">Nimi: </p> 
-                    <input type="text" id="name" required/>
+                    <input id="inputName" name="inputName"/>
+                </div>
+                 <div class="flex-div">
+                     <p class="contents">Salasana: </p> 
+                    <input id="inputPassword" name="inputPassword"/>
                 </div>
                 <div class="flex-div">
-                    <p class="contents">Salasana: </p> 
-                    <input type="text" id="password" required/>
-                </div>
-                <div class="flex-div">
-                    <button class="loginBtns" onClick={noLogin}>Jatka kirjautumatta</button>
+                    <button class="loginBtns" onClick={continueWOLogin}>Jatka kirjautumatta</button>
                     <button class="loginBtns" onClick={Login}> kirjaudu sisään</button>
                 </div>
             </div>

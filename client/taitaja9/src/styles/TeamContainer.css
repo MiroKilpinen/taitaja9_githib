@@ -1,0 +1,47 @@
+.team-container {
+    background-color: #87BBA2;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    margin-left: 50px;
+    margin-top: 50px;
+    width: 30%;
+    height: 15%;
+    border-radius: 5px;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .team-num > h1 {
+    border-radius: 5px;
+    background-color: #F0F7EE;
+    font-weight: lighter;
+    padding: 15px;
+  }
+  
+  .team-nimet > h2 {
+    text-decoration: underline;
+    font-weight: lighter;
+    color: black;
+  }
+  
+  .team-nimet > h4 {
+    font-weight: lighter;
+  }
+  
+  .team-rasti-aika > h4 {
+    font-weight: lighter;
+  }
+  
+  .team-koko-aika > h3 {
+    font-weight: lighter;
+  }
+
+  .team-kaikki-rastit {
+    display: none;
+    flex-direction: row;
+  }
+
+  .näytä-kaikki-rastit {
+  }

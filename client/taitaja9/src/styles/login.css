@@ -1,0 +1,85 @@
+.CONTAINER {
+    background-color: #FFF07C;
+    color: #000000;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    position: absolute;
+    left: 40%; top:30%;
+    padding: 10px;
+}
+
+.flex-div {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+
+/*"Kirjaudu sisään" teksti loginin sisällä*/
+.kirjauduSisText {
+    align-self: center;
+    margin-top: 4px; margin-bottom: 4px;
+    margin-left: 40px;
+    color: #000000;
+    font-size: x-large;
+}
+
+/*Inputit, duh*/
+input {
+    align-self: center;
+    border: solid #000000 2px;
+    border-radius: 5px;
+    background-color: #F0F7EE;
+    height: 20px;
+    position: absolute;
+    right: 40px;
+}
+
+/*Loginin avaus nappi navbarissa*/
+.openLogin {
+    background-color: transparent;
+    color: #000000;
+    font-family: Jaro;
+    border: transparent;
+    font-size: 15px;
+    text-decoration: underline;
+}
+.openLogin:hover {cursor:pointer;}
+
+/*Loginin sulku x*/
+.closeLogin {
+    position: absolute;
+    right: 20px;
+    align-self: center;
+    background-color: transparent;
+    border: transparent;
+    font-size: xx-large;
+    margin: 10px;   
+}
+.closeLogin:active {transform: translateY(2px);}
+.closeLogin:hover {cursor:pointer;}
+
+/*kivat napit loginissa ("jatka kirjautumatta" ja "kirjaudu sisään")*/
+.loginBtns {
+    background-color: #000000;
+    color: #F0F7EE;
+    font-family: Jaro;
+    border-radius: 10px;
+    border: #000000 solid 3px;
+    padding: 4%;
+    margin: 4%;
+    width: 150px;
+}
+.loginBtns:active {transform: translateY(2px);}
+.loginBtns:hover {cursor:pointer;}
+
+/*other texts and stuff*/
+.contents {
+    align-self: center;
+    position: relative;
+    left: 30px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+

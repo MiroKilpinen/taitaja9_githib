@@ -7,7 +7,7 @@ function AppInfo(props) {
             <span className="App-info-1">rasti {props.rasti}</span>
             <span className="App-info-1">{props.RAika}</span>
             <select className="App-info-2" id="AppInfo2">
-                <option value="default" select>Filter</option>
+                <option value="DEFAULT">Filter</option>
                 <option value="nopeaEnsi">Nopein ensin</option>
                 <option value="hidasEnsi">Hitain ensin</option>
                 <option value="top5">TOP 5</option>

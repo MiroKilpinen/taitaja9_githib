@@ -31,35 +31,35 @@ const LoginPopup = () => {
     return (
         <div>
         {/*button navbarissa*/}
-        <button onClick={openLogin} class="openLogin">Kirjaudu sisään</button>
+        <button onClick={openLogin} className="openLogin">Kirjaudu sisään</button>
         
         {isOpen && (
-            <div class="CONTAINER">
-                <div class="flex-div">
-                    <h2 class="kirjauduSisText">Kirjaudu sisään</h2>
-                    <button onClick={closeLogin} class="closeLogin">&#10006;</button>
+            <div className="CONTAINER">
+                <div className="flex-div">
+                    <h2 className="kirjauduSisText">Kirjaudu sisään</h2>
+                    <button onClick={closeLogin} className="closeLogin">&#10006;</button>
                 </div>
-                <div class="flex-div">  
-                    <p class="contents">Nimi: </p> 
+                <div className="flex-div">  
+                    <p className="contents">Nimi: </p> 
                     <input 
-                    class="loginInput"
+                    className="loginInput"
                     onChange={handleNameChange} 
                     id="inputName"
                     value={inputName}
                     />
                 </div>
-                 <div class="flex-div">
-                     <p class="contents">Salasana: </p> 
+                 <div className="flex-div">
+                     <p className="contents">Salasana: </p> 
                     <input 
-                    class="loginInput"
+                    className="loginInput"
                     onChange={handlePasswordChange} 
                     id="inputPassword"
                     value={inputPassword}
                     />
                 </div>
-                <div class="flex-div">
-                    <button class="loginBtns" onClick={continueWOLogin}>Jatka kirjautumatta</button>{/*basically sama ku close login, mut hes here for astethic purposes :3*/}
-                    <button class="loginBtns" onClick={Login(inputName, inputPassword)}> kirjaudu sisään</button>
+                <div className="flex-div">
+                    <button className="loginBtns" onClick={continueWOLogin}>Jatka kirjautumatta</button>{/*basically sama ku close login, mut hes here for astethic purposes :3*/}
+                    <button className="loginBtns" onClick={Login(inputName, inputPassword)}> kirjaudu sisään</button>
                 </div>
             </div>
         )}

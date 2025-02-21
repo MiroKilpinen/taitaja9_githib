@@ -1,6 +1,6 @@
 # Taitaja 9
 
-<h1>Sivun käynnists:</h1>
+<h1>Sivun käynnistys:</h1>
 <ul>
   <li>cd client/taitaja9</li>
   <li>npm install</li>
@@ -8,12 +8,17 @@
 </ul>
 
 <h1>Mitä on tehty:</h1>
-<p>- Tulospalvelun frontendiä</p>
-<p>- Login frontendiä</p>
-<p>- Käyttäjät sivun frontendiä</p>
+<ul>
+  <li>Tulospalvelun frontendiä</li>
+  <li>Login frontendiä</li>
+  <li>Käyttäjät sivun frontendiä</li>
+</ul>
 
 <h1>Mitä puuttuu:</h1>
-<p>- Koko backend</p>
-<p>- Tulospalvelun mobiiliversio</p>
-<p>- Sovelluksen Admin näkymä (Kilpailun luominen csv-tiedostolla, tiimien manuaalisesti lisääminen, muokkaus, dnf merkkaus, poisto, aikojen lisäys ja kisan lopetus)</p>
-<p>- Sovelluksen User näkymä (Tiimien aikojen lisäys)</p>
+<ul>
+  <li>Koko backend</li>
+  <li>Tulospalvelun, loginin ja käyttäjät sivun backend hommat</li>
+  <li>Tulospalvelun mobiiliversio</li>
+  <li>Sovelluksen Admin näkymä (Kilpailun luominen csv-tiedostolla, tiimien manuaalisesti lisääminen, muokkaus, dnf merkkaus, poisto, aikojen lisäys ja kisan lopetus)</li>
+  <li>Sovelluksen User näkymä (Tiimien aikojen lisäys)</li>
+</ul>

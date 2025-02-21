@@ -28,7 +28,7 @@ const AddUserPopup = () => {
               autoComplete="new-password"
             ></input>
             <select className="add-user-select" name="role" id="role">
-              <option value="" disabled selected>
+              <option value="" disabled>
                 Rooli
               </option>
               <option value="Admin">Admin</option>

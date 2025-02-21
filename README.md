@@ -18,6 +18,7 @@
 <ul>
   <li>Koko backend</li>
   <li>Tulospalvelun, loginin ja käyttäjät sivun backend hommat</li>
+  <li>Logout</li>
   <li>Tulospalvelun mobiiliversio</li>
   <li>Sovelluksen Admin näkymä (Kilpailun luominen csv-tiedostolla, tiimien manuaalisesti lisääminen, muokkaus, dnf merkkaus, poisto, aikojen lisäys ja kisan lopetus)</li>
   <li>Sovelluksen User näkymä (Tiimien aikojen lisäys)</li>

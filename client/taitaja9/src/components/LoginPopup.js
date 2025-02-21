@@ -42,6 +42,7 @@ const LoginPopup = () => {
                 <div class="flex-div">  
                     <p class="contents">Nimi: </p> 
                     <input 
+                    class="loginInput"
                     onChange={handleNameChange} 
                     id="inputName"
                     value={inputName}
@@ -50,6 +51,7 @@ const LoginPopup = () => {
                  <div class="flex-div">
                      <p class="contents">Salasana: </p> 
                     <input 
+                    class="loginInput"
                     onChange={handlePasswordChange} 
                     id="inputPassword"
                     value={inputPassword}

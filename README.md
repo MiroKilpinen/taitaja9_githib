@@ -1,4 +1,4 @@
-# taitaja9_githib
+# Taitaja 9
 
 <h1>Sivun käynnists:</h1>
 <p>- cd client/taitaja9</p>
